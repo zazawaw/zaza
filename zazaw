@@ -13,7 +13,7 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzH
 local Window = redzlib:MakeWindow({
 Title = "ZAZA",
 SubTitle = "made by zazawaw",
-SaveFolder = "Configurations | Byte Hub.lua"
+SaveFolder = "Configurations | Zaza.lua"
 })
 
 local Info = Window:MakeTab({"Informations", "info"})
@@ -29,7 +29,7 @@ Window:AddMinimizeButton({
   })
 
 Info:AddDiscordInvite({
-Name = "byte Hub | Community",
+Name = "Zaza | Community",
 Logo = "rbxassetid://17664264110",
 Description = "Join our discord community to receive information about the next update",
 Invite = "https://discord.com/invite/zzH6UU3YJG"
