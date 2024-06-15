@@ -11,8 +11,8 @@ local DistanceReachMobile = 0
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
 local Window = redzlib:MakeWindow({
-Title = "CRACKED BY ETHERNALITY.WTF(NO IP LOGGERS)",
-SubTitle = "made by skatemain",
+Title = "ZAZA",
+SubTitle = "made by zazawaw",
 SaveFolder = "Configurations | Byte Hub.lua"
 })
 
@@ -32,7 +32,7 @@ Info:AddDiscordInvite({
 Name = "byte Hub | Community",
 Logo = "rbxassetid://17664264110",
 Description = "Join our discord community to receive information about the next update",
-Invite = "https://discord.gg/PF36rvJXN4"
+Invite = "https://discord.com/invite/zzH6UU3YJG"
 })
     
 Info:AddParagraph({"Information for Fake Level", "After you set your desired level, it will appear to everyone on the server. However, when you leave and enter another one, it will no longer appear [you will have to set it again], My recommendations are, if you are level 100, do not put it above 1000, if you are above 1000, do not put it above 10 thousand, and so on."})
