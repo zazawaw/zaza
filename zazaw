@@ -30,7 +30,7 @@ Window:AddMinimizeButton({
 
 Info:AddDiscordInvite({
 Name = "Zaza | Community",
-Logo = "rbxassetid://17664264110",
+Logo = "rbxassetid://7229442422",
 Description = "Join our discord community to receive information about the next update",
 Invite = "https://discord.com/invite/zzH6UU3YJG"
 })
@@ -339,49 +339,49 @@ Callback = function(Value)
     if Config.Bigfoot.Enabled then
         if game.Lighting[game.Players.LocalPlayer.Name].PreferredFoot.Value == 2 then
             game.Players.LocalPlayer.Character["Left Leg"].Massless = true
-            local LeftSkate = Instance.new("Part", game.Players.LocalPlayer.Character)
-            LeftSkate.Name = "Left Leg"
-            LeftSkate.CanCollide = false
-            LeftSkate.Color = game.Players.LocalPlayer.Character["Left Leg"].Color
-            LeftSkate.Size = Vector3.new(1, 2, 1)
-            LeftSkate.Locked = true
-            LeftSkate.Position = game.Players.LocalPlayer.Character["Left Leg"].Position
-            local Attachment = Instance.new("Attachment", LeftSkate)
+            local LeftZAZA = Instance.new("Part", game.Players.LocalPlayer.Character)
+            LeftZAZA.Name = "Left Leg"
+            LeftZAZA.CanCollide = false
+            LeftZAZA.Color = game.Players.LocalPlayer.Character["Left Leg"].Color
+            LeftZAZA.Size = Vector3.new(1, 2, 1)
+            LeftZAZA.Locked = true
+            LeftZAZA.Position = game.Players.LocalPlayer.Character["Left Leg"].Position
+            local Attachment = Instance.new("Attachment", LeftZAZA)
             Attachment.Name = "LeftFootAttachment"
             Attachment.Position = Vector3.new(0, -1, 0)
-            local TurkScriptersAreBest = Instance.new("Motor6D", game.Players.LocalPlayer.Character.Torso)
-            TurkScriptersAreBest.Name = "Fake Left Hip"
-            TurkScriptersAreBest.C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-            TurkScriptersAreBest.C1 = CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-            TurkScriptersAreBest.CurrentAngle = 0
-            TurkScriptersAreBest.DesiredAngle = 0
-            TurkScriptersAreBest.MaxVelocity = 0.1
-            TurkScriptersAreBest.Part0 = game.Players.LocalPlayer.Character.Torso
-            TurkScriptersAreBest.Part1 = LeftSkate
+            local ScriptersAreBest = Instance.new("Motor6D", game.Players.LocalPlayer.Character.Torso)
+            ScriptersAreBest.Name = "Fake Left Hip"
+            ScriptersAreBest.C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+            ScriptersAreBest.C1 = CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+            ScriptersAreBest.CurrentAngle = 0
+            ScriptersAreBest.DesiredAngle = 0
+            ScriptersAreBest.MaxVelocity = 0.1
+            ScriptersAreBest.Part0 = game.Players.LocalPlayer.Character.Torso
+            ScriptersAreBest.Part1 = LeftZAZA
             game.Players.LocalPlayer.Character["Left Leg"].Massless = true
             game.Players.LocalPlayer.Character["Left Leg"].Size = Vector3.new(Config.Bigfoot.Studs, 2, Config.Bigfoot.Studs)
             game.Players.LocalPlayer.Character["Left Leg"].Transparency = 2
         elseif game.Lighting[game.Players.LocalPlayer.Name].PreferredFoot.Value == 1 then
             game.Players.LocalPlayer.Character["Right Leg"].Massless = true
-            local RightSkate = Instance.new("Part", game.Players.LocalPlayer.Character)
-            RightSkate.Name = "Right Leg"
-            RightSkate.CanCollide = false
-            RightSkate.Color = game.Players.LocalPlayer.Character["Right Leg"].Color
-            RightSkate.Size = Vector3.new(1, 2, 1)
-            RightSkate.Locked = true
-            RightSkate.Position = game.Players.LocalPlayer.Character["Right Leg"].Position
-            local Attachment = Instance.new("Attachment", RightSkate)
+            local RightZAZA = Instance.new("Part", game.Players.LocalPlayer.Character)
+            RightZAZA.Name = "Right Leg"
+            RightZAZA.CanCollide = false
+            RightZAZA.Color = game.Players.LocalPlayer.Character["Right Leg"].Color
+            RightZAZA.Size = Vector3.new(1, 2, 1)
+            RightZAZA.Locked = true
+            RightZAZA.Position = game.Players.LocalPlayer.Character["Right Leg"].Position
+            local Attachment = Instance.new("Attachment", RightZAZA)
             Attachment.Name = "RightFootAttachment"
             Attachment.Position = Vector3.new(0, -1, 0)
-            local TurkScriptersAreBest = Instance.new("Motor6D", game.Players.LocalPlayer.Character.Torso)
-            TurkScriptersAreBest.Name = "Fake Right Hip"
-            TurkScriptersAreBest.C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-            TurkScriptersAreBest.C1 = CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-            TurkScriptersAreBest.CurrentAngle = 0
-            TurkScriptersAreBest.DesiredAngle = 0
-            TurkScriptersAreBest.MaxVelocity = 0.1
-            TurkScriptersAreBest.Part0 = game.Players.LocalPlayer.Character.Torso
-            TurkScriptersAreBest.Part1 = RightSkate
+            local ScriptersAreBest = Instance.new("Motor6D", game.Players.LocalPlayer.Character.Torso)
+            ScriptersAreBest.Name = "Fake Right Hip"
+            ScriptersAreBest.C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+            ScriptersAreBest.C1 = CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+            ScriptersAreBest.CurrentAngle = 0
+            ScriptersAreBest.DesiredAngle = 0
+            ScriptersAreBest.MaxVelocity = 0.1
+            ScriptersAreBest.Part0 = game.Players.LocalPlayer.Character.Torso
+            ScriptersAreBest.Part1 = RightZAZA
             game.Players.LocalPlayer.Character["Right Leg"].Massless = true
             game.Players.LocalPlayer.Character["Right Leg"].Size = Vector3.new(Config.Bigfoot.Studs, 2, Config.Bigfoot.Studs)
             game.Players.LocalPlayer.Character["Right Leg"].Transparency = 2
@@ -393,7 +393,7 @@ Callback = function(Value)
         game.Players.LocalPlayer.Character["Left Leg"].Massless = true
         game.Players.LocalPlayer.Character["Left Leg"].Size = Vector3.new(1, 2, 1)
         game.Players.LocalPlayer.Character["Left Leg"].Transparency = 2
-        for _, obj in pairs({LeftSkate, RightSkate, LeftFoot, RightFoot}) do
+        for _, obj in pairs({LeftZAZA, RightZAZA, LeftFoot, RightFoot}) do
             if obj then
                 obj:Destroy()
             end
@@ -523,7 +523,7 @@ Reacts:AddButton({"Drible React", function()
         setreadonly(mt, true)
     end})
 
-Reacts:AddSection({"The Crack Reacts[Credits:skatemain]"})
+Reacts:AddSection({"The Crack Reacts[Credits:ZAZAW]"})
 
 Reacts:AddButton({"yBloodz Crack Reacts", function()
     loadstring(game:HttpGet("https://paste.ee/r/NETbq"))()
