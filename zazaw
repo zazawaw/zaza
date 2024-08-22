@@ -961,23 +961,22 @@ mt.__index = function(a, b)
 end
 end})
 
-Misc:AddTextBox
+Misc:AddTextBox Clumsy
 
-({Name = "Clumsy",
-Description = "Use 0.01 or 0.02 For Tricks",
+({Description = "Use 0.01 or 0.02 For Tricks",
 Default = "",
 Callback = function(Value)
     -- Convert the Value to a number
     local lagValue = tonumber(Value)
     
-    -- Check if the value is a valid number
-    if lagValue then
+    -- Check if the value is a number and within a reasonable range
+    if lagValue and lagValue >= 0 then
         -- Set the IncomingReplicationLag
-        game:GetService("NetworkSettings").IncomingReplicationLag = lagValue
+        settings().Network.IncomingReplicationLag = lagValue
     else
         warn("Please enter a valid number for the lag value.")
     end
-end})
+end)}
 
 
 Misc:AddSection({"Shiftlock's"})
