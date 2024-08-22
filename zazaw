@@ -963,11 +963,11 @@ end})
 
 Misc:AddTextBox{(Name = "Clumsy",
 Description = "Use 0.01 or 0.02 For Tricks",
-Default = "",
+Default = false,
 Callback = function(Value)
     settings():GetService("NetworkSettings").IncomingReplicationLag = tonumber(Value)
-end})
-
+end
+})
 
 Misc:AddSection({"Shiftlock's"})
 
