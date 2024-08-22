@@ -962,6 +962,7 @@ end
 end})
 
 Misc:AddTextBox
+
 ({Name = "Clumsy",
 Description = "Use 0.01 or 0.02 For Tricks",
 Default = "",
