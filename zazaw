@@ -963,11 +963,21 @@ end})
 
 Misc:AddTextBox({
 Name = "Clumsy",
-Description = "Use 0.01 or 0.02 For Tricks",
+Description = "Use 0.05 (50 ms) to 0.2 (200 ms) for Tricks",
 Default = "",
 Callback = function(Value)
-    settings():GetService("NetworkSettings").IncomingReplicationLag = tonumber(Value)
-end})
+    -- Convert the Value to a number
+    local lagValue = tonumber(Value)
+    
+    -- Check if the value is a number and within the specified range
+    if lagValue and lagValue >= 0.05 and lagValue <= 0.2 then
+        -- Set the IncomingReplicationLag
+        settings().Network.IncomingReplicationLag = lagValue
+    else
+        warn("Please enter a valid number between 0.05 and 0.2 for the lag value.")
+    end
+end
+
 
 Misc:AddSection({"Shiftlock's"})
 
