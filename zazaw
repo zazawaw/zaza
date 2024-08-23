@@ -961,7 +961,8 @@ mt.__index = function(a, b)
 end
 end})
 
-Misc:AddTextBox{(Name = "Clumsy",
+Misc:AddTextBox({
+Name = "Clumsy",
 Description = "Use 0.01 or 0.02 For Tricks",
 Default = false,
 Callback = function(Value)
