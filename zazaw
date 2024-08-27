@@ -963,14 +963,8 @@ end})
 
 Misc:AddTextBox({
 Name = "Clumsy",
-Description = "Use 0.01 or 0.02 For Tricks",
 Default = false,
-Callback = function(Value)
-    if Value then
-        settings():GetService("NetworkSettings").IncomingReplicationLag = 0.01
-    else
-        settings():GetService("NetworkSettings").IncomingReplicationLag = 0.02
-    end
+Callback = function(Value) settings():GetService("NetworkSettings").IncomingReplicationLag = Value
 end
 })
 
